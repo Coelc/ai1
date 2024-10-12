@@ -7,8 +7,8 @@ using namespace boost::multiprecision;
 
 int main() {
     // Определяем максимальное значение
-    cpp_int max_value("ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364140");
-    cpp_int start_value("1");
+    cpp_int max_value("0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364140");
+    cpp_int start_value("0x1");
 
     // Итерируем от start_value до max_value
     for (cpp_int i = start_value; i <= max_value; ++i) {
