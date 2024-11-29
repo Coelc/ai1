@@ -513,7 +513,7 @@ int main(int argc, char **argv)
 	parser.add("-o", "--out", true);
     parser.add("-f", "--follow", false);
     parser.add("", "--list-devices", false);
-    parser.add("", "--keyspace", true);
+    parser.add("", "--test", true);
     parser.add("", "--continue", true);
     parser.add("", "--share", true);
     parser.add("", "--stride", true);
@@ -557,7 +557,7 @@ int main(int argc, char **argv)
                 listDevices = true;
             } else if(optArg.equals("", "--continue")) {
                 _config.checkpointFile = optArg.arg;
-            } else if(optArg.equals("", "--keyspace")) {
+            } else if(optArg.equals("", "--test")) {
                 secp256k1::uint256 start;
                 secp256k1::uint256 end;
 
